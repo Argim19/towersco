@@ -1,0 +1,569 @@
+/* ===========================
+   PALETA DE COLORES GLOBAL
+=========================== */
+:root {
+  --brand-bg: #0C1E70;        /* azul institucional (fondo header/footer) */
+  --brand-text: #FFFFFF;      /* texto blanco */
+  --brand-accent: #4CD964;    /* verde acento (botones/énfasis) */
+  --brand-hover: #2E8B57;     /* verde oscuro (hover) */
+  --brand-space: 100px;       /* ancho visual del logo + margen aprox */
+
+}
+
+/* ===========================
+   NAVBAR GENERAL
+=========================== */
+.navbar-wrapper,
+.navbar-center {
+  overflow: visible; /* evita cortes de dropdown */
+}
+
+.navbar-custom {
+  background-color: var(--brand-bg);
+  position: relative;
+  z-index: 1040;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-custom .nav-link {
+  color: var(--brand-text);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus,
+.navbar-custom .nav-link.active {
+  color: var(--brand-text);
+  opacity: 0.85;
+}
+
+/* ===========================
+   DROPDOWN MENÚ
+=========================== */
+.navbar .dropdown-menu {
+  z-index: 2000;
+  background-color: var(--brand-bg);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.navbar .dropdown-item {
+  color: var(--brand-text);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: var(--brand-hover);
+  color: var(--brand-text);
+}
+
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:active {
+  background-color: var(--brand-hover);
+  color: var(--brand-text);
+}
+
+.navbar .dropdown-divider {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Flecha del dropdown coherente con color del texto */
+.navbar .nav-link.dropdown-toggle::after {
+  border-top-color: currentColor;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+.brand-logo {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.navbar-brand {
+  flex-shrink: 0; /* evita que el logo se comprima */
+}
+
+/* ===========================
+   ICONO HAMBURGUESA
+=========================== */
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6l18 18M24 6L6 24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.color-footer {
+  background-color: var(--brand-bg);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* < md: menú colapsado */
+@media (max-width: 767.98px) {
+  #mainNavbar .navbar-nav .nav-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* md..lg: centrado flexible con espacio para el logo */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo - menú - espaciador */
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+
+  .navbar-center {
+    position: static;
+    left: auto;
+    transform: none;
+    width: auto;
+  }
+
+  .navbar-center .navbar-nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* espaciador invisible a la derecha del logo */
+  .navbar-wrapper::after {
+    content: "";
+    width: var(--brand-space);
+    height: 1px;
+  }
+
+  /* texto largo del menú se adapta */
+  .navbar-center .navbar-nav .nav-link {
+    white-space: normal;
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
+
+/* ≥ lg: centrado absoluto clásico */
+@media (min-width: 992px) {
+  .navbar-wrapper {
+    position: relative; /* referencia para centrado */
+  }
+
+  .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content; /* ocupa solo lo necesario */
+  }
+
+  .navbar-center .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Ajuste del logo en pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .brand-logo {
+    height: 55px;
+  }
+}
+
+.boton-enviar{
+  background-color:var(--brand-accent);
+  color:var(--brand-text);
+  font-weight:600;
+}
+/* Codigo fabricacion.html*/
+/* ===========================
+   HERO Obras Civiles
+=========================== */
+.img-fabri {
+  background-image: url('../img/banner-fabricacion.png'); /* ← cambia la ruta si hace falta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Titular y texto (opcional, solo si quieres ajustar) */
+.hero-oc__title {
+  font-weight: 700; /* ya usas fw-bold en Bootstrap, esto es por si prefieres forzarlo */
+  color: var(--brand-text);
+}
+.hero-oc__lead {
+  color: var(--brand-text); /* similar a .text-secondary de Bootstrap */
+}
+
+/* ===== Secciones comunes ===== */
+.section-title {
+  position: relative;
+  padding-left: .75rem;
+}
+.section-title::before{
+  content:"";
+  position:absolute;
+  left:0; top:.25rem; bottom:.25rem;
+  width:4px;
+  background: var(--brand-accent);
+  border-radius: 2px;
+}
+
+/* ===== Cards de líneas ===== */
+.oc-card{
+  background:#fff;
+  border-radius:.75rem;
+  padding:1.25rem;
+  border:1px solid rgba(0,0,0,.06);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.06);
+}
+.oc-card__icon{
+  width: 44px; height:44px;
+  border-radius: .75rem;
+  /* fondo translúcido basado en el acento de marca */
+  background: rgba(76,217,100,.15);
+  display:grid; place-items:center;
+  color: var(--brand-bg);
+  font-size: 1.25rem;
+  margin-bottom:.75rem;
+}
+.oc-list{
+  padding-left: 1.1rem;
+}
+.oc-list li{ margin-bottom:.35rem; }
+
+/* ===== Proceso (paso a paso) ===== */
+.process-steps{
+  display:grid;
+  gap: 1rem;
+}
+.color-proceso{
+  background-color: var(--brand-bg);
+}
+@media (min-width: 768px){
+  .process-steps{ grid-template-columns: repeat(5, 1fr); }
+}
+.process-step{
+  display:flex; gap:.75rem; align-items:flex-start;
+  background:#fff; border:1px solid rgba(0,0,0,.06);
+  border-radius:.75rem; padding:1rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
+}
+.process-step__num{
+  inline-size: 34px; block-size:34px;
+  border-radius:.75rem;
+  color:var(--brand-accent); display:grid; place-items:center;
+  font-weight: 700;
+}
+
+/* ===== Botón de marca (CTA) ===== */
+.btn-brand{
+  background-color: var(--brand-accent);
+  color: var(--brand-bg);
+  font-weight: 600;
+  border:0;
+}
+.btn-brand:hover,
+.btn-brand:focus{
+  filter: brightness(.95);
+  transform: scale(1.03);
+  background-color: var(--brand-hover);
+  color: var(--brand-text);
+}
+
+/* Utilidad */
+.object-fit-cover{ object-fit: cover; }
+/* HERO Swiper */
+.hero-swiper-wrap { position: relative; overflow: hidden; }
+.hero-swiper {
+  --hero-height-sm: 60vh;
+  --hero-height-lg: 78vh;
+}
+
+.hero-swiper .swiper-slide {
+  min-height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000; /* color de fondo de seguridad */
+}
+@media (min-width: 992px) {
+  .hero-swiper .swiper-slide { min-height: 78vh; }
+}
+
+/* Capa oscura + contenido */
+.hero-layer{
+  inset: 0;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.35) 100%);
+  color: #fff;
+  padding: 2.5rem 0;
+}
+.hero-layer .container{ max-width: 900px; }
+.hero-layer .btn-outline-light{ border-width: 2px; }
+
+/* Paginación y flechas con colores de marca */
+.hero-swiper .swiper-pagination-bullet{ background: rgba(255,255,255,.7); opacity: 1; }
+.hero-swiper .swiper-pagination-bullet-active{ background: var(--brand-accent); }
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-next{ 
+  background: transparent !important;
+  border: 0 !important;
+  color: var(--brand-text);
+  opacity: .50;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+ }
+.hero-swiper .swiper-button-prev:hover,
+.hero-swiper .swiper-button-next:hover{ color: var(--brand-accent); }
+@media (max-width: 768px){
+  .hero-swiper .swiper-button-prev,
+  .hero-swiper .swiper-button-next{
+    display: none !important;
+  }
+}
+
+/* =======================================================
+   SECCIONES DE INGENIERÍA — Towers&Co
+   (Estilos aislados para ingenieria.html)
+======================================================= */
+
+
+.section-title{
+  margin-bottom: 4rem !important;
+  margin-top: 4rem !important;
+  
+}
+
+/* --- Tarjetas de servicios --- */
+.ing-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* --- Íconos en las tarjetas --- */
+.ing-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 0.75rem;
+  background: rgba(76, 217, 100, 0.15);
+  display: grid;
+  place-items: center;
+  color: var(--brand-bg);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Listas dentro de las tarjetas --- */
+.ing-list {
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+}
+
+.ing-list li {
+  margin-bottom: 0.35rem;
+}
+
+/* --- Sección “Nuestro Enfoque” --- */
+.ing-focus {
+  background-color: var(--brand-bg);
+  background-image: linear-gradient(180deg, var(--brand-bg) 0%, #08124d 100%);
+  color: var(--brand-text);
+}
+
+.ing-focus h3 {
+  color: var(--brand-accent);
+}
+
+.ing-focus p {
+  color: var(--brand-text);
+}
+
+/* --- Espaciado y estructura --- */
+.ing-section {
+  scroll-margin-top: 80px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* --- Responsividad --- */
+@media (max-width: 768px) {
+  
+  .ing-list {
+    text-align: left;
+  }
+}
+.banner-hero {
+  position: relative;
+  background: url('../img/banner-principal.jpg') center center / contain no-repeat;
+  background-color: #000; /* color de fondo para los espacios vacíos */
+  height: 80vh; /* o el alto que prefieras */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+.hero h1 .underlight {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.hero h1 .underlight:before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--brand-accent);
+  z-index: -1;
+}
+.hero p{
+  margin-bottom: 100px;
+  
+}
+.banner-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+/* --- Ondas --- */
+.banner-wave,
+.banner-wave-1 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  bottom: -2px;
+}
+
+
+
+/* --- Ajuste para pantallas pequeñas --- */
+@media (max-width: 768px) {
+  .banner-hero {
+    background: url('../img/banner-principal.jpg') center center / cover no-repeat;
+    height: 60vh;
+    overflow: hidden; /* evita que se vea cualquier hueco */
+    position: relative;
+  }
+
+  .banner-wave,
+  .banner-wave-1 {
+    bottom: -2px; /* empuja apenas la onda hacia abajo */
+  }
+}
+
+
+/* === Misión & Visión Section === */
+.towers-mision-vision {
+  background-color: #ffffff; /* fondo neutro claro */
+  position: relative;
+}
+
+.towers-mision-vision .towers-title {
+  color: var(--brand-bg); /* tu azul institucional */
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.towers-mision-vision .towers-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--brand-accent);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.towers-mision-vision .towers-text {
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.towers-mision-vision img {
+  border-radius: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.towers-mision-vision img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Espaciado para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .towers-mision-vision .towers-title {
+    text-align: center;
+  }
+  .towers-mision-vision .towers-title::after {
+    margin: 8px auto 0;
+  }
+  .towers-mision-vision .towers-text {
+    text-align: justify;
+  }
+}
+
+
+.input-group-text {
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-color: #ddd;
+}
+
+.form-control {
+  border-radius: 0 0.5rem 0.5rem 0;
+  border-color: #ddd;
+}
+
+.form-control:focus {
+  border-color: #0C1E70;
+  box-shadow: 0 0 0 0.2rem rgba(12, 30, 112, 0.25);
+}

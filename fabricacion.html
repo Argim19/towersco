@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Fabricacion" />
+    <title>Fabricacion</title>
+
+    <!-- Bootstrap local -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap Icons local -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- AOS local -->
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header (igual al de index, solo cambia "active") -->
+    <header>
+        <nav class="navbar navbar-custom navbar-expand-md py-2" role="navigation" aria-label="Navegación principal">
+            <div class="container navbar-wrapper color-div">
+                <div class="navbar-brand d-md-block">
+                    <a href="index.html" aria-label="Towers&Co - inicio">
+                        <img src="assets/img/logo-principal.png" alt="Towers&Co" class="brand-logo">
+                    </a>
+                </div>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler ms-auto collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú principal -->
+                <div class="collapse navbar-collapse navbar-center justify-content-md-center" id="mainNavbar">
+                    <ul class="navbar-nav nav-underline gap-3 mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <!-- Dropdown Servicios -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                data-bs-display="static" aria-expanded="false">
+                                SERVICIOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="ingenieria.html">Ingenieria</a></li>
+                                <li><a class="dropdown-item active" href="fabricacion.html">Fabricacion</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <!-- Activo aquí -->
+                            <a class="nav-link" href="contacto.html" aria-current="page">CONTÁCTANOS</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <!-- HERO Obras Civiles -->
+        <section class="hero-oc">
+            <div class="container-fluid img-fabri">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- IZQUIERDA: título, texto, botones -->
+                        <div class="col-12 col-md-6" data-aos="fade-up">
+                            <h1 class="hero-oc__title display-4 fw-bold mb-3">Fabricación arquitectónica</h1>
+                            <p class="hero-oc__lead lead mb-4">
+                                En Towers&Co diseñamos, fabricamos e instalamos soluciones arquitectónicas y
+                                estructurales para proyectos residenciales, comerciales e institucionales. Integramos
+                                carpintería metálica y de aluminio, vidrio templado y madera para lograr piezas
+                                duraderas, estéticas y compatibles con los estándares técnicos de cada proyecto.
+                            </p>
+
+
+                        </div>
+
+                        <!-- DERECHA: imagen de fondo (definida en el CSS) -->
+                        <div class="col-12 col-md-6 p-md-0 p-xl-4" data-aos="zoom-in">
+                            <figure class="hero-oc__media">
+                                <img src="assets/img/image02.jpg" alt="Equipo aplicando recubrimiento en obra civil"
+                                    class="img-fluid" style="max-height:420px;">
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- LÍNEAS DE PRODUCTO Y SERVICIO -->
+        <section class="py-5 bg-body-tertiary">
+            <div class="container">
+                <h2 class="section-title h1 fw-bold mb-4" data-aos="fade-up">Líneas de producto y servicio</h2>
+
+                <div class="row g-4">
+                    <!-- Puertas -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="oc-card h-100">
+                            <div class="oc-card__icon"><i class="bi bi-door-open"></i></div>
+                            <h3 class="h5 fw-semibold mb-2">Puertas</h3>
+                            <ul class="oc-list mb-0">
+                                <li>Galvanizadas para exterior y alto tránsito</li>
+                                <li>Metálicas para interés social (VIS/VIP)</li>
+                                <li>Premium en aluminio con vidrios decorativos</li>
+                                <li>De acceso y de servicio (ventiladas, uso intensivo)</li>
+                                <li>De madera para interiores</li>
+                                <li>De aluminio para bodega</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ventanas y soluciones en vidrio -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                        <div class="oc-card h-100">
+                            <div class="oc-card__icon"><i class="bi bi-columns-gap"></i></div>
+                            <h3 class="h5 fw-semibold mb-2">Ventanas y soluciones en vidrio</h3>
+                            <ul class="oc-list mb-0">
+                                <li>Ventanas de aluminio (corredizas, batientes, combinadas)</li>
+                                <li>Variedad de vidrios y acabados</li>
+                                <li>Estanterías de vidrio templado</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cerramientos y estructuras metálicas -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="oc-card h-100">
+                            <div class="oc-card__icon"><i class="bi bi-building-gear"></i></div>
+                            <h3 class="h5 fw-semibold mb-2">Cerramientos y estructuras</h3>
+                            <ul class="oc-list mb-0">
+                                <li>Portones personalizados con paneles decorativos</li>
+                                <li>Rejillas y rejas de seguridad (aluminio/ hierro)</li>
+                                <li>Balcones y barandas</li>
+                                <li>Escaleras rectas y de caracol</li>
+                                <li>Cerramientos perimetrales en malla eslabonada</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mobiliario y acabados interiores -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="oc-card h-100">
+                            <div class="oc-card__icon"><i class="bi bi-house-gear"></i></div>
+                            <h3 class="h5 fw-semibold mb-2">Mobiliario y acabados</h3>
+                            <ul class="oc-list mb-0">
+                                <li>Cocinas y closets en melamina (modular)</li>
+                                <li>Optimización de espacio y herrajería funcional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUESTRO PROCESO -->
+        <section class="py-5 color-proceso">
+            <div class="container">
+                <h2 class="section-title h1 fw-bold mb-4 text-white" data-aos="fade-up">Cómo trabajamos</h2>
+
+                <ol class="process-steps list-unstyled">
+                    <li class="process-step" data-aos="fade-up">
+                        <span class="process-step__num">1</span>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Asesoría y levantamiento</h3>
+                            <p class="mb-0 text-secondary">Entendimiento del requerimiento, medidas y condiciones de
+                                obra.</p>
+                        </div>
+                    </li>
+                    <li class="process-step" data-aos="fade-up" data-aos-delay="50">
+                        <span class="process-step__num">2</span>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Diseño y especificación</h3>
+                            <p class="mb-0 text-secondary">Selección de materiales y herrajes (aluminio, hierro,
+                                acero,
+                                vidrio, melamina).</p>
+                        </div>
+                    </li>
+                    <li class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <span class="process-step__num">3</span>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Fabricación</h3>
+                            <p class="mb-0 text-secondary">Control de calidad en taller y pruebas de ajuste.</p>
+                        </div>
+                    </li>
+                    <li class="process-step" data-aos="fade-up" data-aos-delay="150">
+                        <span class="process-step__num">4</span>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Instalación</h3>
+                            <p class="mb-0 text-secondary">Montaje en sitio con protocolos de seguridad y acabados
+                                limpios.</p>
+                        </div>
+                    </li>
+                    <li class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <span class="process-step__num">5</span>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Entrega y garantía</h3>
+                            <p class="mb-0 text-secondary">Verificación final y recomendaciones de mantenimiento.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title h1 fw-bold mb-4" data-aos="fade-up">Preguntas frecuentes</h2>
+
+                <div class="accordion" id="faqOC">
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="q1">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#a1" aria-expanded="false" aria-controls="a1">
+                                ¿En qué materiales trabajan?
+                            </button>
+                        </h2>
+                        <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#faqOC">
+                            <div class="accordion-body">
+                                Aluminio, hierro, acero inoxidable, vidrio templado/laminado y melamina.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="50">
+                        <h2 class="accordion-header" id="q2">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+                                ¿Atienden proyectos residenciales y comerciales?
+                            </button>
+                        </h2>
+                        <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqOC">
+                            <div class="accordion-body">
+                                Sí. Desde vivienda de interés social hasta clínicas y equipamientos públicos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="accordion-header" id="q3">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
+                                ¿Pueden fabricar a medida y con diseños propios?
+                            </button>
+                        </h2>
+                        <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faqOC">
+                            <div class="accordion-body">
+                                Sí. Portones, balcones, rejas y puertas personalizadas según especificaciones del
+                                proyecto.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
+                        <h2 class="accordion-header" id="q4">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
+                                ¿Realizan instalación?
+                            </button>
+                        </h2>
+                        <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faqOC">
+                            <div class="accordion-body">
+                                Sí. Entregamos soluciones completas: fabricación + instalación en sitio (herrajes y
+                                sellos según el caso).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="accordion-header" id="q5">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
+                                ¿Dónde operan?
+                            </button>
+                        </h2>
+                        <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#faqOC">
+                            <div class="accordion-body">
+                                Base operativa en Barranquilla (Atlántico). Consultar cobertura regional por proyecto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-5 bg-body-tertiary text-black">
+            <div class="container">
+                <div class="row align-items-center g-3">
+                    <div class="col-lg-8" data-aos="fade-right">
+                        <h2 class="h1 fw-bold mb-2">¿Listo para fabricar tu proyecto?</h2>
+                        <p class="mb-0">Envíanos medidas, fotos de referencia y ubicación. Te asesoramos
+                            en materiales y acabados.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                        <a href="contacto.html" class="btn btn-lg btn-brand">Solicitar cotización</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer mt-auto py-5 text-white border-top color-footer" aria-label="Pie de página">
+        <div class="container">
+            <div class="row gy-4">
+
+
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold mb-3">Secciones</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="link-light">Inicio</a></li>
+                        <li><a href="index.html" class="link-light">Servicios</a></li>
+                        <li><a href="contacto.html" class="link-light">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="link-light">Email:
+                            <a href="mailto:correo@gmail.com"
+                                class="link-light text-decoration-none">correo@gmail.com</a>
+                        </li>
+                        <li class="link-light">Tel: +00 000 000</li>
+
+                    </ul>
+                </div>
+
+                <!-- Redes -->
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="link-light" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="#" class="link-light" aria-label="Instagram">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="link-light" aria-label="X (Twitter)">
+                            <i class="bi bi-twitter-x fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-top mt-4 pt-3 text-center small">
+                © 2025 Towers&Co. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

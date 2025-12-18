@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ingenieria" />
+    <title>Ingenieria</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"> <!-- antes -->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- después -->
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header (igual al de index, solo cambia "active") -->
+    <header>
+        <nav class="navbar navbar-custom navbar-expand-md py-2" role="navigation" aria-label="Navegación principal">
+            <div class="container navbar-wrapper color-div">
+                <div class="navbar-brand d-md-block">
+                    <a href="index.html" aria-label="Towers&Co - inicio">
+                        <img src="assets/img/logo-principal.png" alt="Towers&Co" class="brand-logo">
+                    </a>
+                </div>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler ms-auto collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú principal -->
+                <div class="collapse navbar-collapse navbar-center justify-content-md-center" id="mainNavbar">
+                    <ul class="navbar-nav nav-underline gap-3 mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <!-- Dropdown Servicios -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                data-bs-display="static" aria-expanded="false">
+                                SERVICIOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" href="ingenieria.html">Ingenieria</a></li>
+                                <li><a class="dropdown-item" href="fabricacion.html">Fabricacion</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <!-- Activo aquí -->
+                            <a class="nav-link" href="contacto.html" aria-current="page">CONTÁCTANOS</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal (cambia solo esta parte) -->
+    <main class="flex-grow-1">
+        <section class="hero-swiper-wrap">
+            <div class="swiper hero-swiper" aria-label="Galería de ingeniería">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 — Ingeniería integral -->
+                    <div class="swiper-slide" style="background-image:url('assets/img/Slyder1.jpg');">
+
+                        <div class="hero-layer">
+                            <div class="container">
+                                <h1 class="display-5 fw-bold mb-2">Soluciones integrales de diseño, construcción y
+                                    mantenimiento</h1>
+                                <p class="lead mb-3">Ingeniería civil y arquitectónica para proyectos que combinan
+                                    innovación, calidad y seguridad en cada fase.</p>
+                                <a href="#ing-servicios" class="btn btn-brand btn-lg">Explorar
+                                    servicios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 — Diseño y construcción -->
+                    <div class="swiper-slide" style="background-image:url('assets/img/Slyder2.jpg');">
+                        <div class="hero-layer">
+                            <div class="container">
+                                <h2 class="h1 fw-bold mb-2">Diseño y construcción con excelencia técnica</h2>
+                                <p class="lead mb-3">Desde el cálculo estructural y los estudios ambientales, hasta la
+                                    fabricación y montaje de estructuras metálicas.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 — Supervisión y eficiencia -->
+                    <div class="swiper-slide" style="background-image:url('assets/img/Slyder3.jpg');">
+                        <div class="hero-layer">
+                            <div class="container">
+                                <h2 class="h1 fw-bold mb-2">Supervisión, interventoría y mantenimiento confiable</h2>
+                                <p class="lead mb-3">Control técnico, programación y mantenimiento predictivo que
+                                    aseguran resultados sostenibles y duraderos.</p>
+                                <a href="contacto.html" class="btn btn-brand btn-lg">Contáctanos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <div class="swiper-pagination"></div>
+                <button class="swiper-button-prev" aria-label="Slide anterior"></button>
+                <button class="swiper-button-next" aria-label="Slide siguiente"></button>
+            </div>
+        </section>
+        <!-- =======================================================
+     SECCIONES DE INGENIERÍA — Towers&Co
+     (Colocar debajo del slider principal)
+======================================================= -->
+
+        <!-- Servicios Generales -->
+        <section class="ing-section">
+            <div class="container" data-aos="fade-up">
+
+                <p class="lead mt-4">
+                    En Towers&Co brindamos soluciones integrales en diseño, construcción y manufactura estructural,
+                    ofreciendo un servicio completo que cubre todas las etapas de un proyecto, desde la planificación
+                    técnica y conceptual hasta la fabricación, montaje y mantenimiento de estructuras.
+
+
+                </p>
+                <p class="lead">
+                    Nuestro compromiso es proporcionar a cada cliente un acompañamiento profesional que garantice
+                    eficiencia, calidad y cumplimiento, optimizando los recursos y asegurando resultados duraderos.
+                </p>
+                <p class="lead">
+                    Contamos con un equipo técnico especializado en el desarrollo de estructuras metálicas, obras
+                    civiles y sistemas de climatización industrial, aplicando procesos de ingeniería avanzada y
+                    materiales de alto rendimiento. Gracias a una gestión precisa y a la coordinación integral entre
+                    diseño, producción y ejecución, logramos proyectos que combinan solidez estructural, funcionalidad y
+                    estética.
+                </p>
+                <h2 id="ing-servicios" class="section-title h1 fw-bold">Servicios de Ingeniería y Fabricación</h2>
+
+                <div class="row gy-4">
+                    <!-- Ingeniería y Diseño -->
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="ing-card h-100">
+                            <div class="ing-card__icon"><i class="bi bi-rulers"></i></div>
+                            <h5>Ingeniería y Diseño</h5>
+                            <p class="mb-2">
+                                Desarrollo de estudios, planos y diseños estructurales, arquitectónicos y de
+                                instalaciones.
+                            </p>
+                            <ul class="ing-list text-muted">
+                                <li>Diseño estructural y arquitectónico.</li>
+                                <li>Modelado técnico para fabricación y montaje.</li>
+                                <li>Cálculo y análisis estructural.</li>
+                                <li>Asesoría técnica para optimización de materiales y costos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ing-card h-100">
+                            <div class="ing-card__icon"><i class="bi bi-building"></i></div>
+                            <h5>Construcción y Fabricación</h5>
+                            <p class="mb-2">
+                                Ejecución de obras civiles, estructuras metálicas y proyectos industriales integrales.
+                            </p>
+                            <ul class="ing-list text-muted">
+                                <li>Construcción de obras civiles y edificaciones.</li>
+                                <li>Fabricación de estructuras metálicas, cubiertas y cerramientos.</li>
+                                <li>Remodelaciones y adecuaciones industriales.</li>
+                                <li>Gerencia y control de proyectos constructivos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="ing-card h-100">
+                            <div class="ing-card__icon"><i class="bi bi-wind"></i></div>
+                            <h5>Climatización y Sistemas Técnicos</h5>
+                            <p class="mb-2">
+                                Instalación y mantenimiento de sistemas de ventilación y refrigeración industrial.
+                            </p>
+                            <ul class="ing-list text-muted">
+                                <li>Instalación de aire acondicionado y ventilación mecánica.</li>
+                                <li>Mantenimiento y control de calidad del aire.</li>
+                                <li>Suministro e integración de equipos de climatización.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Gestión y Supervisión de Proyectos -->
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="ing-card h-100">
+                            <div class="ing-card__icon"><i class="bi bi-clipboard-check"></i></div>
+                            <h5>Gestión y Supervisión de Proyectos</h5>
+                            <p class="mb-2">
+                                Control técnico, administrativo y de calidad en todas las etapas del proyecto.
+                            </p>
+                            <ul class="ing-list text-muted">
+                                <li>Planeación y programación de obras.</li>
+                                <li>Presupuestación y análisis de costos.</li>
+                                <li>Interventoría y supervisión técnica.</li>
+                                <li>Auditoría y control de calidad en obra.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestro Enfoque -->
+        <section id="ing-enfoque" class="ing-section ing-focus">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title h1 fw-bold mb-1">Nuestro Enfoque</h2>
+                <p class="lead">
+                    Cada proyecto desarrollado por <strong>Towers&Co</strong> se ejecuta bajo un modelo integral que
+                    combina
+                    ingeniería, fabricación y control técnico, ofreciendo soluciones confiables, funcionales y
+                    sostenibles
+                    para nuestros clientes.
+                </p>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <!-- Footer (igual) -->
+    <footer class="footer mt-auto py-5 text-white border-top color-footer" aria-label="Pie de página">
+        <div class="container">
+            <div class="row gy-4">
+
+
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold mb-3">Secciones</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="link-light">Inicio</a></li>
+                        <li><a href="index.html" class="link-light">Servicios</a></li>
+                        <li><a href="contacto.html" class="link-light">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="link-light">Email:
+                            <a href="mailto:correo@gmail.com"
+                                class="link-light text-decoration-none">correo@gmail.com</a>
+                        </li>
+                        <li class="link-light">Tel: +00 000 000</li>
+
+                    </ul>
+                </div>
+
+                <!-- Redes -->
+                <div class="col-6 col-md-3">
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="link-light" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="#" class="link-light" aria-label="Instagram">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="link-light" aria-label="X (Twitter)">
+                            <i class="bi bi-twitter-x fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-top mt-4 pt-3 text-center small">
+                © 2025 Towers&Co. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
