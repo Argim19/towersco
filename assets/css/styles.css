@@ -9,7 +9,9 @@
   --brand-space: 100px;       /* ancho visual del logo + margen aprox */
 
 }
-
+html, body {
+  overflow-x: hidden;
+}
 /* ===========================
    NAVBAR GENERAL
 =========================== */
